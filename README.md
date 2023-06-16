@@ -1,1 +1,1 @@
-![Design preview for the NIKE shoe model](./design/nike-perview.png)
+(./design/nike-perview.png)
