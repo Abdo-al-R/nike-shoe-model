@@ -1,4 +1,4 @@
 
-# Frontend Mentor - 3-column preview card component
+# Frontend design - NIKE shoe model
 
-![Design preview for the 3-column preview card component coding challenge](./design/nike-perview.png)
+![Design preview for the NIKE shoe model coding challenge](./design/nike-perview.png)
