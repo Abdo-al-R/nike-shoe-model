@@ -1,4 +1,4 @@
 
 # Frontend design - NIKE shoe model
 
-!(./design/nike-perview.png)
+![Design preview for the NIKE shoe model coding challenge](./design/nike-perview.png)
