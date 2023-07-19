@@ -775,7 +775,7 @@ main{
   @media (min-width:375px) and (max-width:480px){
 
     body {
-      min-height: 200vh;
+      min-height: 140vh;
     }
     header{
       height: 70px;
@@ -810,7 +810,7 @@ main{
       width: fit-content;
       display: block;
       position: absolute;
-      right: 10px;
+      right: 15px;
       font-size: 1.5rem;
     }
     nav ul{
@@ -903,7 +903,7 @@ main{
     }
     .shoe img{
       width: 350px;
-      transform:  rotate(-15deg) translate(0px,27px) !important;
+      transform:  rotate(-15deg) translate(10px,27px) !important;
     }
     .shoe-info{
       width: 224px;
@@ -911,7 +911,7 @@ main{
       font-size: 13px;
       padding-left: 20px;
       border-radius: 50px;
-      transform: translate(-25px, 30px);
+      transform: translate(-15px, 30px);
       line-height: 20px;
       border-top-right-radius: unset ;
       border-bottom-right-radius: unset ;
