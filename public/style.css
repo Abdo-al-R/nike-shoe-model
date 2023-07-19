@@ -46,4 +46,1107 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'Poppins', sans-serif;
+  min-height: 125vh;
+  background: linear-gradient(90deg, #21E8C4 -20.42%, #179B93 -3.13%, #267B87 24.22%, #0F474F 72.75%);
+  color: #FFFFFF;
 }
+
+header{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 150px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo span{
+  font-weight: 700;
+  font-size: 21px;
+  color: #FFFFFF;
+}
+.logo img{
+  width: 125px;
+  filter: sepia(100%) saturate(5000%) hue-rotate(1deg);
+  transform: translate(-13px , -3px);
+}
+nav{
+  width: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul{
+  width: 360px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+nav ul li{
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  color: #ECE2E2;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav ul li::after{
+  content: "";
+  height: 2px;
+  background-color: #FAFF23;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav ul li:hover::after{
+  animation: line 0.3s linear forwards;
+}
+ @keyframes line{
+  0%{
+    width: 0%;
+  }
+  20%{
+    width: 20%;
+  }
+  40%{
+    width: 40%;
+  }
+  60%{
+    width: 60%;
+  }
+  80%{
+    width: 80%;
+  }
+  100%{
+    width: 100%;
+  }
+ }
+
+.search-label{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.search-label input{
+  width: 150px;
+  height: 32px;
+  border: none;
+  outline: none;
+  background: #D9D9D9;
+  border-radius: 23px;
+  padding-left: 35px;
+}
+.search-label input::-webkit-input-placeholder{
+  font-weight: 400;
+font-size: 14px;
+letter-spacing: 0.115em;
+color: rgba(0, 0, 0, 0.93);
+}
+nav .search-img{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 8px;
+}
+main{
+  padding-left: 120px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.sec-1{
+  width: 400px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.sec-1 h1{
+  width: 170px;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 0.015em;
+  line-height: 83px;
+  margin-bottom: 20px;
+}
+.sec-1 p{
+  width: 418px;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.015em;
+  margin-bottom: 50px;
+
+}
+.sec-1 a{
+  width: 175px;
+  height: 52px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.015em;
+  color: #FAFF23;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:  0.2s ease-out ;
+}
+.sec-1 a:hover{
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.sec-2{
+  width: 650px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shoes{
+  width: 550px;
+  height: 350px;
+  align-self: center;
+
+}
+.shoe{
+  width: 550px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.6s ease;
+}
+.shoe img{
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  transition: 0.6s ease;
+  transform: rotate(-15deg);
+  /* filter: drop-shadow(0px 29px 37px rgba(0, 0, 0, 0.56)); */
+}
+
+.shoe-info{
+  display: block;
+  width: 375px;
+  height: 85px;
+  background-color:#D9D9D9;
+  color: #185955;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.015em;
+  border-radius: 71px;
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+  position: absolute;
+  z-index: -2;
+  top: 30%;
+  transition: .3s ease;
+  transform: translate(-65px);
+
+}
+.shoe-info span{
+  display: block;
+  width: 180px;
+}
+.overlay{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.3534) 0%, rgba(0, 0, 0, 0.0114) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+
+.buttons{
+  width: 550px;
+  height: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+}
+.btn{
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in;
+}
+.btn-img{
+  width: 152px;
+  height: 129px;
+  background: linear-gradient(180deg, rgba(250, 255, 35, 0.99) -4.65%, rgba(250, 255, 35, 0) 100%);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  margin-bottom: 16px;
+}
+.btn-img img{
+  width: 90%;
+}
+.btn span{
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.115em;
+  text-transform: capitalize;
+  transition: 0.3s ease-in;
+}
+
+
+ .clicked .btn-img{
+  width: 178px;
+  height: 151px;
+  background: #FAFF23;
+}
+.clicked img{
+  filter: drop-shadow(0px 29px 15px rgba(0, 0, 0, 0.562));
+}
+.clicked span{
+  font-size: 14px;
+}
+
+.visible{
+  display: block;
+}
+.visible img{
+  transform:  rotate(-15deg) translate(0,50px) ;
+}
+.invisible{
+  display: none;
+}
+
+
+.me{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.09em;
+  color: #FFFFFF;
+  width: fit-content;
+  transform: translate(120px);
+}
+.me a{
+  color: #FFFFFF;
+}
+/* ===== Scrollbar CSS ===== */
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color:#179B93;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+  .menu-label{
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+  }
+  input[type=checkbox]{
+    display: none;
+  }
+
+
+  @media (min-width:1200px) and (max-width:1300px){
+    header{
+      padding: 0 50px 0 110px;
+    }
+    main{
+      padding-left: 90px;
+    }
+    .me{
+      transform: translate(90px);
+    }
+  }
+  @media (min-width:1100px) and (max-width:1199px){
+    header{
+      padding: 0 50px 0 90px;
+    }
+    main{
+      padding-left: 70px;
+    }
+    .me{
+      transform: translate(70px);
+    }
+  }
+  @media (min-width:1025px) and (max-width:1099px){
+    header{
+      padding: 0 50px 0 70px;
+    }
+    nav ul li{
+      font-size: 20px;
+    }
+    main{
+      padding-left: 50px;
+    }
+    .sec-2{
+      width: 550px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .shoe{
+      width: 500px;
+      height: 300px;
+    }
+    .shoe img{
+      width: 450px;
+      transform:  rotate(-15deg) translate(0,10px) ;
+    }
+    .shoe-info{
+      width: 350px;
+      height: 75px;
+      padding-left: 35px;
+      border-radius: 65px;
+    }
+    .buttons{
+      width: 500px;
+      height: 200px;
+    }
+    .btn{
+      width: 150px;
+      height: 170px;
+    }
+    .btn-img{
+      width: 140px;
+      height: 129px;
+    }
+    .btn-img img{
+      width: 90%;
+    }
+    .btn span{
+      font-size: 11px;
+    }
+    .clicked .btn-img{
+      width: 150px;
+      height: 150px;
+    }
+    .clicked span{
+      font-size: 13px;
+    }
+    .visible img{
+      transform:  rotate(-15deg) translate(0,50px) ;
+    }
+    .me{
+      transform: translate(50px);
+    }
+  }
+
+  @media (min-width:769px) and (max-width:1024px){
+    body {
+      min-height: 120vh;
+    }
+    header{
+      padding: 0 30px 0 40px;
+    }
+    .logo span{
+      font-size: 20px;
+    }
+    .logo img{
+      width: 110px;
+      transform: translate(-13px , -2px);
+    }
+    nav{
+      width: 500px;
+    }
+    nav ul{
+      width: 300px;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+    nav ul li{
+      font-size: 18px;
+    }
+    .search-label{
+      width: 170px;
+    }
+    .search-label input{
+      width: 130px;
+      height: 32px;
+    }
+    main{
+      padding-left: 30px;
+      margin-top: 20px;
+    }
+    .sec-1{
+      width: 40%;
+      height: 500px;
+      padding-top: 20px;
+    }
+    .sec-1 h1{
+      width: 140px;
+      font-weight: 700;
+      font-size: 54px;
+      letter-spacing: 0.015em;
+      line-height: 73px;
+      margin-bottom: 20px;
+    }
+    .sec-1 p{
+      width: 100%;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.015em;
+      margin-bottom: 30px;
+    }
+    .sec-1 a{
+      width: 150px;
+      height: 42px;
+      font-size: 18px;
+    }
+    .sec-2{
+      width: 50%;
+      height: 580px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .shoes{
+      width: 95%;
+      height: 350px;
+      align-self: flex-end;
+    }
+    .shoe{
+      width: 100%;
+      height: 300px;
+      align-self: flex-end;
+    }
+    .shoe img{
+      width: 95%;
+      transform:  rotate(-15deg) translate(-20px,-5px) ;
+    }
+    .shoe-info{
+      width: 330px;
+      height: 60px;
+      font-size: 15px;
+      padding-left: 25px;
+      border-radius: 60px;
+      transform: translate(-100px , 10px);
+
+    }
+    .shoe-info span{
+      display: block;
+      width: 150px;
+    }
+    .buttons{
+      width: 390px;
+      height: 200px;
+      transform: translate(-50px);
+    }
+    .btn{
+      width: 130px;
+      height: 150px;
+    }
+    .btn-img{
+      width: 110px;
+      height: 100px;
+    }
+    .btn-img img{
+      width: 90%;
+    }
+    .btn span{
+      font-size: 9px;
+    }
+    .clicked .btn-img{
+      width: 125px;
+      height: 150px;
+    }
+    .clicked span{
+      font-size: 10px;
+    }
+    .visible img{
+      transform:  rotate(-15deg) translate(-35px,55px) ;
+    }
+    .me{
+      transform: translate(30px);
+    }
+  }
+  @media (min-width:481px) and (max-width:768px){
+
+    body {
+      min-height: 200vh;
+    }
+    header{
+      padding: 0 30px 0 40px;
+      position: relative;
+    }
+    .logo span{
+      font-size: 20px;
+    }
+    .logo img{
+      width: 110px;
+      transform: translate(-13px , -2px);
+    }
+
+
+    nav{
+      width: 80%;
+      font-family: sans-serif;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    .search-label{
+      width: 170px;
+    }
+    .search-label input{
+      width: 130px;
+      height: 32px;
+    }
+    .menu-label{
+      width: fit-content;
+      display: block;
+      position: absolute;
+      right: 20px;
+    }
+    nav ul{
+      display: none;
+    }
+    #click:checked ~ .menu-label i:before {
+      content: "\f00d";
+    }
+    #click:checked ~ ul{
+      display: block;
+      background: rgba( 0, 197, 153, 0.5 );
+      box-shadow: 0 1px 15px 0 rgb(0, 255, 255);
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      position: absolute;
+      top:90px;
+      right: 40px;
+      width: 200px;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly ;
+      padding-left: 20px;
+      z-index: 10;
+    }
+    #click:checked ~ ul li{
+      width: fit-content;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+
+
+    
+
+    main{
+      padding-left: 30px;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .sec-1{
+      width: 90%;
+      height: 480px;
+      padding-top: 20px;
+      align-items: center;
+    }
+    .sec-1 h1{
+      width: 140px;
+      font-weight: 700;
+      font-size: 54px;
+      letter-spacing: 0.015em;
+      line-height: 73px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .sec-1 p{
+      width: 100%;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.015em;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .sec-1 a{
+      width: 150px;
+      height: 42px;
+      font-size: 18px;
+    }
+    .sec-2{
+      width: 90%;
+      height: 560px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .shoes{
+      width: fit-content;
+      height: 350px;
+      align-self: center;
+
+    }
+    .shoe{
+      width: 100%;
+      height: 300px;
+      align-self: flex-end;
+
+    }
+    .shoe img{
+      width: 400px;
+      transform:  rotate(-15deg) translate(0px,30px) !important;
+    }
+    .shoe-info{
+      width: 270px;
+      height: 60px;
+      font-size: 15px;
+      padding-left: 25px;
+      border-radius: 60px;
+      transform: translate(-10px, 10px);
+      
+    }
+    .shoe-info span{
+      display: block;
+      width: 150px;
+    }
+    .buttons{
+      width: 420px;
+      height: 200px;
+      transform: unset;
+      align-self: center;
+    }
+    .btn{
+      width: 140px;
+      height: 150px;
+    }
+    .btn-img{
+      width: 120px;
+      height: 100px;
+    }
+    .btn-img img{
+      width: 90%;
+    }
+    .btn span{
+      font-size: 10px;
+    }
+    .clicked .btn-img{
+      width: 135px;
+      height: 150px;
+    }
+    .clicked span{
+      font-size: 12px;
+    }
+    .visible img{
+      transform:  rotate(-15deg) translate(-20px,80px) !important;
+    }
+    .me{
+      transform: translate(0);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+  }
+
+
+  @media (min-width:375px) and (max-width:480px){
+
+    body {
+      min-height: 200vh;
+    }
+    header{
+      height: 70px;
+      padding: 0 10px 0 30px;
+      position: relative;
+    }
+    .logo span{
+      font-size: 18px;
+    }
+    .logo img{
+      width: 90px;
+      transform: translate(-12px , -2px);
+    }
+
+
+    nav{
+      width: 85%;
+      font-family: sans-serif;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    .search-label{
+      width: fit-content;
+    }
+    .search-label input{
+      width: 110px;
+      height: 28px;
+      margin-right: 5px;
+    }
+    .menu-label{
+      width: fit-content;
+      display: block;
+      position: absolute;
+      right: 10px;
+      font-size: 1.5rem;
+    }
+    nav ul{
+      display: none;
+    }
+    #click:checked ~ .menu-label i:before {
+      content: "\f00d";
+    }
+    #click:checked ~ ul{
+      display: block;
+      background: rgba( 0, 197, 153, 0.5 );
+      box-shadow: 0 1px 15px 0 rgb(0, 255, 255);
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      width: 200px;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly ;
+      padding-left: 20px;
+      z-index: 10;
+    }
+    #click:checked ~ ul li{
+      width: fit-content;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+
+
+    
+
+    main{
+      padding-left: 30px;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .sec-1{
+      width: 85%;
+      height: 480px;
+      padding-top: 20px;
+      align-items: center;
+    }
+    .sec-1 h1{
+      width: 140px;
+      font-weight: 700;
+      font-size: 54px;
+      letter-spacing: 0.015em;
+      line-height: 73px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .sec-1 p{
+      width: 100%;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.015em;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .sec-1 a{
+      width: 150px;
+      height: 42px;
+      font-size: 18px;
+    }
+    .sec-2{
+      width: 90%;
+      height: 540px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .shoes{
+      width: fit-content;
+      height: 350px;
+      align-self: center;
+
+    }
+    .shoe{
+      width: 100%;
+      height: 300px;
+      align-self: flex-end;
+
+    }
+    .shoe img{
+      width: 350px;
+      transform:  rotate(-15deg) translate(0px,27px) !important;
+    }
+    .shoe-info{
+      width: 224px;
+      height: 50px;
+      font-size: 13px;
+      padding-left: 20px;
+      border-radius: 50px;
+      transform: translate(-25px, 30px);
+      line-height: 20px;
+      border-top-right-radius: unset ;
+      border-bottom-right-radius: unset ;
+    }
+    
+    .shoe-info span{
+      display: block;
+      width: 130px;
+    }
+    .buttons{
+      width: 360px;
+      height: 200px;
+      transform: unset;
+      align-self: center;
+    }
+    .btn{
+      width: 120px;
+      height: 150px;
+    }
+    .btn-img{
+      width: 100px;
+      height: 100px;
+      margin-bottom: 12px;
+    }
+    .btn-img img{
+      width: 90%;
+    }
+    .btn span{
+      font-size: 8px;
+    }
+    .clicked .btn-img{
+      width: 110px;
+      height: 110px;
+    }
+    .clicked span{
+      font-size: 10px;
+    }
+    .visible img{
+      transform:  rotate(-15deg) translate(-15px,100px) !important;
+    }
+    .me{
+      transform: translate(0);
+      margin-left: auto;
+      margin-right: auto;
+      transform: translate(0,50px);
+    }
+  }
+
+  @media (min-width:0px) and (max-width:374px){
+
+    body {
+      min-height: 250vh;
+    }
+    header{
+      height: 70px;
+      padding: 0 10px 0 30px;
+      position: relative;
+    }
+    .logo span{
+      font-size: 16px;
+    }
+    .logo img{
+      width: 80px;
+      transform: translate(-11px , -2px);
+    }
+
+
+    nav{
+      width: 85%;
+      font-family: sans-serif;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+
+    .search-label{
+      width: fit-content;
+    }
+    .search-label input{
+      width: 100px;
+      height: 25px;
+      margin-right: 5px;
+    }
+    .menu-label{
+      width: fit-content;
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 15px;
+      font-size: 1.5rem;
+    }
+    nav ul{
+      display: none;
+    }
+    #click:checked ~ .menu-label i:before {
+      content: "\f00d";
+    }
+    #click:checked ~ ul{
+      display: block;
+      background: rgba( 0, 197, 153, 0.5 );
+      box-shadow: 0 1px 15px 0 rgb(0, 255, 255);
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 10px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      position: absolute;
+      top: 90px;
+      right: 20px;
+      width: 200px;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly ;
+      padding-left: 20px;
+      z-index: 10;
+    }
+    #click:checked ~ ul li{
+      width: fit-content;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+
+
+    
+
+    main{
+      padding-left: 30px;
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .sec-1{
+      width: 85%;
+      height: 480px;
+      padding-top: 20px;
+      align-items: center;
+    }
+    .sec-1 h1{
+      width: 140px;
+      font-weight: 700;
+      font-size: 54px;
+      letter-spacing: 0.015em;
+      line-height: 73px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .sec-1 p{
+      width: 100%;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: 0.015em;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .sec-1 a{
+      width: 150px;
+      height: 42px;
+      font-size: 18px;
+    }
+    .sec-2{
+      width: 90%;
+      height: 950px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .shoes{
+      width: fit-content;
+      height: 350px;
+      align-self: center;
+
+    }
+    .shoe{
+      width: 100%;
+      height: 300px;
+      align-self: flex-end;
+
+    }
+    .shoe img{
+      width: 250px;
+      transform:  rotate(-15deg) translate(22px,0px) !important;
+    }
+    .shoe-info{
+      width: 224px;
+      height: 40px;
+      font-size: 10px;
+      padding-left: 10px;
+      border-radius: 30px;
+      transform: translate(-25px, 30px);
+      line-height: 15px;
+      border-top-right-radius: unset ;
+      border-bottom-right-radius: unset ;
+    }
+    
+    .shoe-info span{
+      display: block;
+      width: 110px;
+    }
+    .buttons{
+      width: 250px;
+      height: 500px;
+      transform: unset;
+      align-self: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .btn{
+      width: 200px;
+      height: 200px;
+    }
+    .btn-img{
+      width: 120px;
+      height: 120px;
+      margin-bottom: 12px;
+    }
+    .btn-img img{
+      width: 90%;
+    }
+    .btn span{
+      font-size: 11px;
+    }
+    .clicked .btn-img{
+      width: 130px;
+      height: 130px;
+    }
+    .clicked span{
+      font-size: 14px;
+    }
+    .visible img{
+      transform:  rotate(-15deg) translate(-15px,100px) !important;
+    }
+    .me{
+      transform: translate(0);
+      margin-left: auto;
+      margin-right: auto;
+      transform: translate(0,0px);
+    }
+  }
